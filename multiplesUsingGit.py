@@ -11,6 +11,12 @@ while validNumber == False:
 	except :
 		number = input("That's not a number. Try again: ")
 
-double = number*2
+index = 0
+output = ""
 
-print("Double {} is {}.".format(number, double))
+while index < 10:
+	index += 1
+	multiple = number * index
+	output += ("{} * {} = {}\n".format(number, index, multiple))
+
+print(output)
